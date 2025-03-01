@@ -3,6 +3,6 @@
   imports = [
     ./core.nix
     self.nvixModules.lang
-    self.nvixModules.rust
+    self.nvixModules.webdev
   ];
 }

@@ -40,7 +40,7 @@
         full = package (nvix "full") "Full utility set (Full Set contains tex utilities)";
         rust = package (nvix "rust") "Rust utility set (Full Set contains tex utilities)";
         webdev = package (nvix "webdev") "WebDev utility set (Full Set contains tex utilities)";
-        python = package (nvix "pythone") "Python utility set (Full Set contains tex utilities)";
+        python = package (nvix "python") "Python utility set (Full Set contains tex utilities)";
       };
       formatter = pkgs.nixpkgs-fmt;
     };
