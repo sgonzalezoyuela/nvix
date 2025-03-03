@@ -8,6 +8,7 @@
     tex = ./tex;
     lang = ./lang;
     rust = ./rust;
+    avante = ./avante;
     python = ./python;
     webdev = ./webdev;
     snacks = ./snacks;
