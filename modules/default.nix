@@ -13,6 +13,7 @@
     webdev = ./langs/webdev;
     snacks = ./snacks;
     buffer = ./buffer; # Buffer manager/bufferline
+    haskell = ./langs/haskell;
     general = ./general; # General Neovim config
     lualine = ./lualine;
     copilot = ./copilot;

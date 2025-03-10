@@ -31,6 +31,7 @@
         rust = check (nvix "rust") "Checks if rust builds fine";
         webdev = check (nvix "webdev") "Checks if webdev builds fine";
         python = check (nvix "python") "Checks if python builds fine";
+        haskell = check (nvix "haskell") "Checks if haskell builds fine";
       };
       # Lets you run `nix run .` to start nixvim
       packages = rec {
@@ -41,6 +42,7 @@
         rust = package (nvix "rust") "Rust utility set (Full Set contains tex utilities)";
         webdev = package (nvix "webdev") "WebDev utility set (Full Set contains tex utilities)";
         python = package (nvix "python") "Python utility set (Full Set contains tex utilities)";
+        haskell = package (nvix "haskell") "Haskell utility set (Full Set contains tex utilities)";
       };
       formatter = pkgs.nixpkgs-fmt;
     };
