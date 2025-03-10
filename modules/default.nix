@@ -7,10 +7,10 @@
     cmp = ./cmp;
     tex = ./tex;
     lang = ./lang;
-    rust = ./rust;
+    rust = ./langs/rust;
     avante = ./avante;
-    python = ./python;
-    webdev = ./webdev;
+    python = ./langs/python;
+    webdev = ./langs/webdev;
     snacks = ./snacks;
     buffer = ./buffer; # Buffer manager/bufferline
     general = ./general; # General Neovim config
