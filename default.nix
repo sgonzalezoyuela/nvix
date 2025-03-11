@@ -29,6 +29,7 @@
         bare = check (nvix "bare") "Checks if bare builds fine";
         full = check (nvix "full") "Checks if full builds fine";
         rust = check (nvix "rust") "Checks if rust builds fine";
+        java = check (nvix "java") "Checks if java builds fine";
         webdev = check (nvix "webdev") "Checks if webdev builds fine";
         python = check (nvix "python") "Checks if python builds fine";
         haskell = check (nvix "haskell") "Checks if haskell builds fine";
@@ -40,6 +41,7 @@
         bare = package (nvix "bare") "Minimal utility set (Good for servers to quick spin)";
         full = package (nvix "full") "Full utility set (Full Set contains tex utilities)";
         rust = package (nvix "rust") "Rust utility set (Full Set contains tex utilities)";
+        java = package (nvix "java") "Java utility set (Full Set contains tex utilities)";
         webdev = package (nvix "webdev") "WebDev utility set (Full Set contains tex utilities)";
         python = package (nvix "python") "Python utility set (Full Set contains tex utilities)";
         haskell = package (nvix "haskell") "Haskell utility set (Full Set contains tex utilities)";

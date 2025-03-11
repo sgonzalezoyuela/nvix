@@ -6,6 +6,7 @@
     lsp = ./lsp;
     cmp = ./cmp;
     tex = ./tex;
+    java = ./langs/java;
     lang = ./lang;
     rust = ./langs/rust;
     avante = ./avante;
