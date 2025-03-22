@@ -12,7 +12,7 @@
           model = "claude-3-7-sonnet-20250219",  -- Updated model value
         },
         windows = {
-            position = "left"
+            position = "right"
         }
       })
     '';
