@@ -73,6 +73,13 @@ in {
   extraConfigLua = with icons.diagnostics;
     # lua
     ''
+
+      vim.opt.laststatus = 3
+
+      -- vim.opt.syntax = "on"
+      -- vim.g.markdown_fenced_languages = {'Avante', 'python', 'javascript', 'html', 'bash', 'sh' }
+      vim.treesitter.language.register('markdown', 'Avante')
+
       vim.opt.whichwrap:append("<>[]hl")
       vim.opt.listchars:append("space:·")
 

@@ -38,6 +38,14 @@
           },
         }
       })
+
+      vim.api.nvim_create_autocmd("BufEnter", {
+        callback = function()
+        if vim.bo.filetype == "Avante" then
+          vim.bo.filetype = "markdown"
+        end
+      end
+})
     '';
   };
   imports = with builtins; with lib;
