@@ -6,8 +6,11 @@
     luaConfig.post = ''
       require("avante").setup({
 
-        claude = {
-          model = "claude-3-7-sonnet-20250219"  -- Updated model value
+        --claude = {
+        --  model = "claude-3-7-sonnet-20250219"  -- Updated model value
+        --},
+        gemini = {
+           model = "gemini-2.5-pro-exp-03-25"
         },
 
         windows = {
