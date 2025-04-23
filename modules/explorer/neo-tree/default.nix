@@ -46,7 +46,7 @@ in {
         };
         window = {
           position = "right";
-          autoExpandWidth = true;
+          autoExpandWidth = false;
           mappings = {
             "f" = helpers.mkRaw # lua
               ''
