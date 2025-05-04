@@ -1,11 +1,13 @@
 { lib, pkgs, ... }:
 {
   plugins = {
-    nvim-jdtls = {
+    jdtls = {
       enable = true;
-      cmd = [
-        (lib.getExe pkgs.jdt-language-server)
-      ];
+      settings = {
+        cmd = [
+          (lib.getExe pkgs.jdt-language-server)
+        ];
+      };
     };
   };
 }
