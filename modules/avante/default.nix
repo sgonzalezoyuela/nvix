@@ -10,7 +10,7 @@
         --  model = "claude-3-7-sonnet-20250219"  -- Updated model value
         --},
         gemini = {
-           model = "gemini-2.5-pro-exp-03-25"
+           model = "gemini-2.5-pro-preview-05-06"
         },
 
         windows = {
