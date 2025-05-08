@@ -58,6 +58,7 @@ nix run "github:niksingh710/nvix#full"
 
 ## 🔧 Installation
 
+
 <details>
   <summary>
   Ensure that you have nix installed on your system and flakes enabled.
