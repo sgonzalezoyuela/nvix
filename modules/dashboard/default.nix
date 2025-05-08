@@ -13,7 +13,7 @@
         ];
         mru.limit = 5;
         week_header.enable = true;
-        project.enable = true;
+        project.enable = false;
         shortcut = [
           {
             action = helpers.mkRaw "function() Snacks.picker.files() end";
