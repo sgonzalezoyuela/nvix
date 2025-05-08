@@ -8,7 +8,6 @@
           enable = true;
           disable = [
             "latex"
-            "markdown"
           ];
         };
         auto_install = true;

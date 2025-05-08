@@ -15,7 +15,7 @@ in {
     glow = {
       enable = true;
       lazyLoad.settings = {
-        ft = "markdown";
+        ft = [ "markdown" "Avante" ];
         cmd = "Glow";
       };
     };
