@@ -4,7 +4,7 @@ in {
   plugins = {
     render-markdown = {
       enable = true;
-      lazyLoad.settings.ft = "markdown";
+      lazyLoad.settings.ft = [ "markdown" "Avante" ];
       luaConfig.post = ''
         require("render-markdown").setup({
           file_types = { 'markdown', 'Avante' },
