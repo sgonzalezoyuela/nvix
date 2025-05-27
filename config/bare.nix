@@ -8,5 +8,6 @@
     self.nvixModules.colorschemes
     self.nvixModules.snacks
   ];
-  colorscheme = "catppuccin"; # as it has light variant also
+  #colorscheme = "catppuccin"; # as it has light variant also
+  colorscheme = "tokyonight"; # as it has light variant also
 }

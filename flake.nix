@@ -26,25 +26,51 @@
       flake = false;
     };
 
-    minintro = {
-      url = "github:eoh-bse/minintro.nvim";
-      flake = false;
-    };
-
     md-pdf = {
       url = "github:arminveres/md-pdf.nvim";
       flake = false;
     };
 
+    git-hooks-nix = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs =
-    { nixvim, flake-parts, ... }@inputs:
+    { flake-parts, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
+      ];
+      perSystem =
+        { pkgs, config, ... }:
+        {
+          pre-commit.settings.hooks.nixfmt-rfc-style.enable = true;
+          devShells.default = pkgs.mkShell {
+            name = "nvix";
+            packages = with pkgs; [
+              nixd
+              nixfmt-rfc-style
+            ];
+            shellHook = ''
+              ${config.pre-commit.installationScript}
+              echo 1>&2 "🐼: $(id -un) | 🧬: $(nix eval --raw --impure --expr 'builtins.currentSystem') | 🐧: $(uname -r) "
+              echo 1>&2 "Ready to work on nvix!"
+            '';
+          };
+
+        };
       imports = [
         ./modules
         ./default.nix
+
+        # For shell env and commits
+        inputs.git-hooks-nix.flakeModule
       ];
     };
 }

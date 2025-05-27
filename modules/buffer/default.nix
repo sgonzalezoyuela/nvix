@@ -1,4 +1,9 @@
-{ pkgs, inputs, lib, ... }:
+{
+  pkgs,
+  inputs,
+  lib,
+  ...
+}:
 {
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
@@ -10,7 +15,6 @@
   plugins = {
     harpoon = {
       enable = true;
- #     keymapsSilent = true;
     };
     bufferline = {
       enable = true;
@@ -21,12 +25,10 @@
     };
   };
 
-  imports = with builtins; with lib;
-    map (fn: ./${fn})
-      (filter
-        (fn: (
-          fn != "default.nix"
-          && !hasSuffix ".md" "${fn}"
-        ))
-        (attrNames (readDir ./.)));
+  imports =
+    with builtins;
+    with lib;
+    map (fn: ./${fn}) (
+      filter (fn: (fn != "default.nix" && !hasSuffix ".md" "${fn}")) (attrNames (readDir ./.))
+    );
 }
