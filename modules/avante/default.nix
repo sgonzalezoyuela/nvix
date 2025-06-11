@@ -9,14 +9,17 @@
         --claude = {
         --  model = "claude-3-7-sonnet-20250219"  -- Updated model value
         --},
+
+        providers = {
         gemini = {
            model = "gemini-2.5-pro-preview-05-06"
         },
 
+
         claude = {
            model = "claude-4-0-sonnet-2025052"
         },
-
+        },
         windows = {
           ---@alias AvantePosition "right" | "left" | "top" | "bottom" | "smart"
           position = "left",
