@@ -3,31 +3,18 @@
   plugins.avante = {
     enable = true;
     autoLoad = true;
-
-    settings = {
-      # Claude MUST be configured here (luaConfig.pre)
-      claude = {
-        model = "claude-sonnet-4-20250514";
-        extra_request_body = {
-          temperature = 0;
-          max_tokens = 64000;
-        };
-      };
-
-    };
-
     luaConfig.post = ''
       require("avante").setup({
-        -- Gemini MUST be configured here (luaConfig.post)
-        providers = {
-          gemini = {
-            model = "gemini-2.5-pro",
 
-            extra_request_body = {
-              --temperature = 0.75,
-              max_tokens = 65536,
-            },
-          },
+        --claude = {
+        --  model = "claude-3-7-sonnet-20250219"  -- Updated model value
+        --},
+        gemini = {
+           model = "gemini-2.5-pro"
+        },
+
+        claude = {
+           model = "claude-sonnet-4-20250514"
         },
 
         windows = {

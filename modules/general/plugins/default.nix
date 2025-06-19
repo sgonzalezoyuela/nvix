@@ -12,10 +12,7 @@
     smart-splits.enable = true;
     web-devicons.enable = true;
     lz-n.enable = true;
-    flash = {
-      enable = true;
-      settings.modes.char.enabled = false;
-    };
+    flash.enable = true;
     mini = {
       enable = true;
       mockDevIcons = true;

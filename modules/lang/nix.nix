@@ -1,6 +1,3 @@
 {
-  plugins.lsp.servers.nixd = {
-    enable = true;
-    settings.formatting.command = [ "nixpkgs-fmt" ];
-  };
+  plugins.lsp.servers.nixd.enable = true;
 }
