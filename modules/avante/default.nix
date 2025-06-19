@@ -10,13 +10,20 @@
         --  model = "claude-3-7-sonnet-20250219"  -- Updated model value
         --},
         providers = {
+
           gemini = {
            model = "gemini-2.5-pro"
           },
 
           claude = {
-           model = "claude-4-0-sonnet-20250514"
+            endpoint = "https://api.anthropic.com",
+            model = "claude-sonnet-4-20250514",
+            extra_request_body = {
+              temperature = 0.75,
+              max_tokens = 4096,
+            },
           },
+
         },
 
         windows = {

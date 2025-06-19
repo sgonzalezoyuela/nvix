@@ -60,6 +60,5 @@
         python = package (nvix "python") "Python utility set (Full Set contains tex utilities)";
         haskell = package (nvix "haskell") "Haskell utility set (Full Set contains tex utilities)";
       };
-      formatter = pkgs.nixpkgs-fmt;
     };
 }
