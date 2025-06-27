@@ -3,11 +3,19 @@
     "buffer-manager": {
       "flake": false,
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1745514089,
         "narHash": "sha256-t3runUJzZRYh2FeTFN7d4ErJuoj6U1iKaB/SUiy9ei8=",
         "owner": "j-morano",
         "repo": "buffer_manager.nvim",
         "rev": "d82035f35c3a24aa5b7d13c511890bdcc8c33976",
+=======
+        "lastModified": 1750405853,
+        "narHash": "sha256-4zlebkZdHhseCw8rSlysEBTxJ0jvj5YDg15TlNNItC8=",
+        "owner": "j-morano",
+        "repo": "buffer_manager.nvim",
+        "rev": "941a746e8a07fbb351f3016edfd903e31cbc1322",
+>>>>>>> e92d7ef (issue with AI models list)
         "type": "github"
       },
       "original": {
@@ -98,11 +106,19 @@
         ]
       },
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1747372754,
         "narHash": "sha256-2Y53NGIX2vxfie1rOW0Qb86vjRZ7ngizoo+bnXU9D9k=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
         "rev": "80479b6ec16fefd9c1db3ea13aeb038c60530f46",
+=======
+        "lastModified": 1750779888,
+        "narHash": "sha256-wibppH3g/E2lxU43ZQHC5yA/7kIKLGxVEnsnVK1BtRg=",
+        "owner": "cachix",
+        "repo": "git-hooks.nix",
+        "rev": "16ec914f6fb6f599ce988427d9d94efddf25fe6d",
+>>>>>>> e92d7ef (issue with AI models list)
         "type": "github"
       },
       "original": {
@@ -178,11 +194,19 @@
     },
     "nixpkgs": {
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1749558678,
         "narHash": "sha256-DUVAe8E2X2QM0dAnTGlTiqemMqUMMyIeCH7UeNo0g64=",
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "a12f3a99614894502e73eb816e9e076b0ab05730",
+=======
+        "lastModified": 1750865895,
+        "narHash": "sha256-p2dWAQcLVzquy9LxYCZPwyUdugw78Qv3ChvnX755qHA=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "61c0f513911459945e2cb8bf333dc849f1b976ff",
+>>>>>>> e92d7ef (issue with AI models list)
         "type": "github"
       },
       "original": {
@@ -209,11 +233,19 @@
     },
     "nixpkgs_2": {
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1748406211,
         "narHash": "sha256-B3BsCRbc+x/d0WiG1f+qfSLUy+oiIfih54kalWBi+/M=",
         "owner": "NixOS",
         "repo": "nixpkgs",
         "rev": "3d1f29646e4b57ed468d60f9d286cde23a8d1707",
+=======
+        "lastModified": 1750811787,
+        "narHash": "sha256-rD/978c35JXz6JLAzciTIOCMenPumF6zrQOj4rVZeHE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "992f916556fcfaa94451ebc7fc6e396134bbf5b1",
+>>>>>>> e92d7ef (issue with AI models list)
         "type": "github"
       },
       "original": {
@@ -231,11 +263,19 @@
         "systems": "systems_2"
       },
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1749496904,
         "narHash": "sha256-eNDMzrcDBOprdJs7DpMOJfCEcxribxDJP2OjozSC3Wo=",
         "owner": "nix-community",
         "repo": "nixvim",
         "rev": "e0b3d8bc3a0ab5a7cc0792c7705e92f9c5c598f3",
+=======
+        "lastModified": 1750879244,
+        "narHash": "sha256-ClV6rZbPnd5wIcBYNiCdrbhtSzY6dwPRA4Z/z1cFcyo=",
+        "owner": "nix-community",
+        "repo": "nixvim",
+        "rev": "f0764db7212003520341ac10ddcee50e9c458a6f",
+>>>>>>> e92d7ef (issue with AI models list)
         "type": "github"
       },
       "original": {

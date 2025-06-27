@@ -3,17 +3,15 @@
   plugins.avante = {
     enable = true;
     autoLoad = true;
+
+    settings = {
+        claude = {
+            model = "claude-sonnet-4-20250514";
+          };
+      };
+
     luaConfig.post = ''
       require("avante").setup({
-
-        --claude = {
-        --  model = "claude-3-7-sonnet-20250219"  -- Updated model value
-        --},
-
-        providers = {
-        gemini = {
-           model = "gemini-2.5-pro"
-        },
 
 
         claude = {
