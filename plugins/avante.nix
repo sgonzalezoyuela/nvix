@@ -19,19 +19,23 @@
           model = "claude-sonnet-4-20250514";
         };
 
-        gemini = {
-          extra_request_body = {
-            max_tokens = 64000;
-            temperature = 0;
-          };
-          model = "gemini-2.5-flash";
-        };
       };
     };
 
     luaConfig.post = ''
       require("avante").setup({
-        -- TODO : Move to NIX expression
+
+        providers = {
+          -- gemini not in nvix settings
+          gemini = {
+            model = "gemini-2.5-flash",
+            timeout = 30000, -- Timeout in milliseconds
+            extra_request_body = {
+              temperature = 0,
+              max_tokens = 65534,
+            },
+          },
+        },
         windows = {
           ---@alias AvantePosition "right" | "left" | "top" | "bottom" | "smart"
           position = "left",
