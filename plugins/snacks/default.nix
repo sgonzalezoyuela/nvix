@@ -5,6 +5,10 @@ in
 {
   # Generalise for all colorschemes
   # <https://github.com/folke/snacks.nvim/discussions/1306#discussioncomment-12266647>
+
+  # TODO: <https://github.com/folke/snacks.nvim/discussions/2003#discussioncomment-13653042>
+  # Implement this with a fix, i have done the implementation in nix way, but `grep` seems to break.
+  # first check is required if it is from lua or nix
   plugins.todo-comments.enable = true;
   plugins.neoscroll.enable = true;
   plugins.snacks = {
