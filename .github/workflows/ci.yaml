@@ -21,6 +21,7 @@ jobs:
 
       - name: "Install Nix"
         uses: DeterminateSystems/nix-installer-action@main
+
       - name: "Install omnix"
         run: |
           nix profile install nixpkgs#omnix
@@ -30,4 +31,5 @@ jobs:
           om ci run \
             --extra-access-tokens ${{ secrets.GITHUB_TOKEN }} \
             --results=$HOME/omci.json \
+            --include-all-dependencies \
             -- --accept-flake-config

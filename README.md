@@ -42,6 +42,9 @@ nix run "github:niksingh710/nvix#<type>"
 # <type> can be: bare | default | full
 ```
 
+>[!NOTE]
+> Now no need for ~--accept-flake-config~ flag, as Nvix's all package are already cached in the nixos cache
+
 ## Installation
 
 ### Prerequisites
