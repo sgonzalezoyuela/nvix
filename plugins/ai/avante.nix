@@ -25,10 +25,10 @@
         claude = {
           #endpoint = "https://api.anthropic.com";
           extra_request_body = {
-            max_tokens = 64000;
+            max_tokens = 32000;
             temperature = 0;
           };
-          model = "claude-sonnet-4-20250514";
+          model = "claude-opus-4-1-20250805";
         };
 
       };
